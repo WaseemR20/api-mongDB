@@ -21,6 +21,11 @@ router.post('/', async (req, res) => {
   const tv = new Tv({
     title: req.body.title,
     name: req.body.name,
+    jasdlk: req.body.jasdlk,
+    genres: req.body.genres,
+    genre_ids: req.body.genre_ids,
+    play: req.body.play,
+    adult: req.body.adult,
     id: req.body.id,
     backdrop_path: req.body.backdrop_path,
     first_air_date: req.body.first_air_date,
@@ -28,14 +33,15 @@ router.post('/', async (req, res) => {
     origin_country: req.body.origin_country,
     original_language: req.body.original_language,
     original_name: req.body.original_name,
+    original_title: req.body.original_title,
     overview: req.body.overview,
     popularity: req.body.popularity,
     poster_path: req.body.poster_path,
+    release_date: req.body.release_date,
     vote_average: req.body.vote_average,
     vote_count: req.body.vote_count,
     number_of_episodes: req.body.number_of_episodes,
     trailer: req.body.trailer,
-    genre_ids: req.body.genre_ids,
     logo: req.body.logo,
   });
 

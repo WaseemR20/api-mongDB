@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 const PostSchema = mongoose.Schema({
   name: String,
   id: Number,
-  title: {
-    type: String,
-    required: true,
-  },
+  title:  String,
   binary: Buffer,
   living: Boolean,
   updated: { type: Date, default: Date.now },
